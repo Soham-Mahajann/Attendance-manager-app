@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="default_color">#F6565F</color>
+    <color name="new_color">#80BE76</color>
+    <color name="blue">#3E8FD2</color>
+
+    <!-- You can define other colors here if needed -->
+</resources>

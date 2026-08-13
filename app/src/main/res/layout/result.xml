@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".result">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/rounded_rectangle_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/presentno"
+            android:layout_width="330dp"
+            android:layout_height="134dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:text="Array content will be displayed here"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="20dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="360dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="348dp"
+        android:background="@drawable/rounded_rectangle_grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/absentno"
+            android:layout_width="330dp"
+            android:layout_height="134dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:text="Array content will be displayed here"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="52dp"
+            tools:layout_editor_absoluteY="20dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/present"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Present Students:"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="sans-serif-light"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="344dp"
+        android:layout_marginTop="302dp"
+        android:fontFamily="sans-serif-light"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/absent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="296dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Absent Students:"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pie_chart"
+        android:layout_width="410dp"
+        android:layout_height="326dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="102dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
